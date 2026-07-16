@@ -17,13 +17,11 @@ public class Email {
         this.body = body;
     }
 
-    public Email copy(Email email) {
-        Email copy = new Email();
-        copy.setReceiver(email.getReceiver());
-        copy.setSender(email.getSender());
-        copy.setSubject(email.getSubject());
-        copy.setBody(email.getBody());
-        return copy;
+    public Email (Email email) {
+        this.receiver = email.getReceiver();
+        this.sender = email.getSender();
+        this.subject = email.getSubject();
+        this.body = email.getBody();
     }
 
     public void display () {
