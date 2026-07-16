@@ -1,13 +1,13 @@
-package MultipleInstanceCreation.CloneFunction;
+package MultipleInstanceCreation.PrototypePattern;
 
 public class Main {
     public static void main(String[] args) {
         
         Email email = new Email("receiver@gmail.com", "sender@gmail.com", "Subject", "Body");
-        Email copyMail = email.emailClone();
+        Email copyMail = email.copy();
 
         PremiumEmail premiumEmail = new PremiumEmail("receiver@gmail.com", "sender@gmail.com", "Subject", "Body", "High");
-        PremiumEmail copyPremiumEmail = premiumEmail.emailClone();
+        PremiumEmail copyPremiumEmail = premiumEmail.copy();
         
         System.out.println("Original Email:");
         email.display();
