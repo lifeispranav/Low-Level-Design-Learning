@@ -1,4 +1,4 @@
-package SolidPrinciples.Example06.BetterCode;
+package SolidPrinciples.Example05.BetterCode;
 
 public class VisaCC extends CreditCard implements RefundCompatibleCC {
     

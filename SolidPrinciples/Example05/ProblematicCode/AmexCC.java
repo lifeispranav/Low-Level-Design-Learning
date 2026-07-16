@@ -1,4 +1,4 @@
-package SolidPrinciples.Example06.ProblematicCode;
+package SolidPrinciples.Example05.ProblematicCode;
 
 public class AmexCC extends CreditCard {
     

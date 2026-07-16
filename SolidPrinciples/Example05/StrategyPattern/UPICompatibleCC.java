@@ -1,4 +1,4 @@
-package SolidPrinciples.Example06.StrategyPattern;
+package SolidPrinciples.Example05.StrategyPattern;
 
 public interface UPICompatibleCC {
 

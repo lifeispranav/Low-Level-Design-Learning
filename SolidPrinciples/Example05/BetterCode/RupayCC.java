@@ -1,12 +1,6 @@
-package SolidPrinciples.Example06.StrategyPattern;
+package SolidPrinciples.Example05.BetterCode;
 
 public class RupayCC extends CreditCard implements UPICompatibleCC, RefundCompatibleCC {
-    
-    private RefundStrategy refundStrategy;
-
-    public RupayCC() {
-        this.refundStrategy = new SameInstrumentRefundStrategy();
-    }
     
     @Override
     public void swipeAndPay() {
@@ -30,7 +24,7 @@ public class RupayCC extends CreditCard implements UPICompatibleCC, RefundCompat
 
     @Override
     public void doRefund() {
-        this.refundStrategy.doRefund();
+        System.out.println("Rupay Credit Card: Refund");
     }
     
 }

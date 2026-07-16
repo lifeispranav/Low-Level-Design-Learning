@@ -1,4 +1,4 @@
-package SolidPrinciples.Example06.StrategyPattern;
+package SolidPrinciples.Example05.StrategyPattern;
 
 public class MastercardCC extends CreditCard implements RefundCompatibleCC {
     
